@@ -1,0 +1,346 @@
+* using log directory 'C:/Users/au488376/OneDrive - Aarhus universitet/Documents/Projects/genutil/..Rcheck'
+* using R version 4.4.1 (2024-06-14 ucrt)
+* using platform: x86_64-w64-mingw32
+* R was compiled by
+    gcc.exe (GCC) 13.2.0
+    GNU Fortran (GCC) 13.2.0
+* running under: Windows 11 x64 (build 22631)
+* using session charset: UTF-8
+* checking for file './DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'genutil' version '1.0'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  ..Rcheck
+  .git
+These were most likely included in error. See section 'Package
+structure' in the 'Writing R Extensions' manual.
+* checking for portable file names ... OK
+* checking whether package 'genutil' can be installed ... OK
+* used C++ compiler: 'G__~1.EXE (GCC) 13.2.0'
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Checking should be performed on sources prepared by 'R CMD build'.
+Packages listed in more than one of Depends, Imports, Suggests, Enhances:
+  'magrittr' 'tidyverse'
+A package should be listed in only one of these fields.
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directory with the name of a check directory:
+  ./..Rcheck
+Most likely, these were included erroneously.
+* checking code files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'library' or 'require' calls not declared from:
+  'dplyr' 'stringr' 'tidyr'
+'library' or 'require' call to 'magrittr' which was already attached by Depends.
+  Please remove these calls from your code.
+'library' or 'require' calls in package code:
+  'dplyr' 'stringr' 'tidyr'
+  Please use :: or requireNamespace() instead.
+  See section 'Suggested packages' in the 'Writing R Extensions' manual.
+Namespaces in Imports field not imported from:
+  'dplyr' 'magrittr' 'tidyverse'
+  All declared Imports should be used.
+Packages in Depends field not imported from:
+  'Matrix' 'data.table' 'magrittr' 'tidyverse'
+  These packages need to be imported from (in the NAMESPACE file)
+  for when this namespace is loaded but not attached.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+cor2cov: no visible global function definition for '%>%'
+create_diagonal_matrix: no visible global function definition for '%>%'
+create_empty_matrix: no visible global function definition for '%>%'
+create_identity_matrix: no visible global function definition for '%>%'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for '%>%'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'filter'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'line'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'mutate'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for '%$%'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'str_locate_all'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'select'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'start'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'str_split'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'fread'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'rename_at'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'group_by'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'covariance_matrix'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'column'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'summarize'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'estimate'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'ungroup'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'size'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'str_locate'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'x'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'first_blank'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'regressor_start'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'regressor_end'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'insides_start'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'insides_end'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'rename_all'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'all_of'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'distinct'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'arrange'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'across'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'everything'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'add_row'
+dmu_calculate_breeding_values_with_random_regression : <anonymous>: no
+  visible global function definition for '%>%'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'class_variable_number'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'effect_type'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'class_code'
+dmu_calculate_breeding_values_with_random_regression: no visible
+  binding for global variable 'effect_number'
+dmu_calculate_breeding_values_with_random_regression: no visible global
+  function definition for 'pivot_wider'
+get_legendre_polynomial: no visible global function definition for
+  '%>%'
+get_legendre_polynomial: no visible global function definition for
+  'polynomial.values'
+get_legendre_polynomial: no visible global function definition for
+  'select'
+get_legendre_polynomial: no visible global function definition for
+  'all_of'
+get_random_string_of_letters: no visible global function definition for
+  '%>%'
+interpolate_missing_values: no visible global function definition for
+  'head'
+interpolate_missing_values: no visible global function definition for
+  'tail'
+load_QMsim_output: no visible global function definition for '%>%'
+load_QMsim_output: no visible global function definition for 'mutate'
+load_QMsim_output: no visible global function definition for 'filter'
+load_QMsim_output: no visible binding for global variable
+  'file_replicate'
+load_QMsim_output: no visible binding for global variable 'filetype'
+load_QMsim_output: no visible binding for global variable
+  'is_linkage_map'
+load_QMsim_output: no visible binding for global variable 'is_qtl_file'
+load_QMsim_output: no visible global function definition for 'fread'
+load_QMsim_output: no visible global function definition for 'add_row'
+load_QMsim_output: no visible global function definition for
+  'rename_all'
+load_QMsim_output: no visible global function definition for 'arrange'
+load_QMsim_output: no visible binding for global variable 'chromosome'
+load_QMsim_output: no visible binding for global variable 'position'
+load_QMsim_output: no visible binding for global variable 'locus'
+load_QMsim_output: no visible binding for global variable 'sex'
+load_QMsim_output: no visible global function definition for 'fwrite'
+load_QMsim_output: no visible global function definition for 'relocate'
+load_QMsim_output: no visible binding for global variable 'animal'
+sample_correlation_matrix: no visible global function definition for
+  'runif'
+sample_correlation_matrix: no visible global function definition for
+  'rnorm'
+sample_correlation_matrix: no visible global function definition for
+  '%>%'
+see_matrix: no visible global function definition for '%>%'
+sort_pedigree: no visible global function definition for '%>%'
+sort_pedigree: no visible global function definition for 'mutate'
+sort_pedigree: no visible binding for global variable 'father'
+sort_pedigree: no visible binding for global variable 'animal'
+sort_pedigree: no visible binding for global variable 'mother'
+sort_pedigree: no visible global function definition for 'filter'
+sort_pedigree: no visible binding for global variable
+  'father_not_in_animal'
+sort_pedigree: no visible binding for global variable
+  'mother_not_in_animal'
+sort_pedigree: no visible global function definition for 'select'
+sort_pedigree: no visible global function definition for 'gather'
+sort_pedigree: no visible binding for global variable 'role'
+sort_pedigree: no visible global function definition for 'distinct'
+sort_pedigree: no visible global function definition for 'add_row'
+sort_pedigree: no visible global function definition for '%$%'
+sort_pedigree: no visible global function definition for 'arrange'
+sort_pedigree: no visible binding for global variable 'generation'
+sort_pedigree: no visible binding for global variable
+  'generation_placeholder'
+str_locate_flex: no visible global function definition for '%>%'
+str_locate_flex: no visible global function definition for
+  'str_locate_all'
+str_locate_flex: no visible binding for global variable 'head'
+str_locate_flex: no visible binding for global variable 'tail'
+str_locate_last: no visible global function definition for '%>%'
+str_locate_last: no visible global function definition for
+  'str_locate_all'
+str_locate_last: no visible binding for global variable 'tail'
+write_dmu_dir_file: no visible global function definition for '%>%'
+write_dmu_dir_file: no visible global function definition for 'fread'
+write_dmu_dir_file: no visible global function definition for
+  'group_by'
+write_dmu_dir_file: no visible binding for global variable 'type'
+write_dmu_dir_file: no visible global function definition for 'mutate'
+write_dmu_dir_file: no visible global function definition for 'n'
+write_dmu_dir_file: no visible global function definition for 'ungroup'
+write_dmu_dir_file: no visible global function definition for 'add_row'
+write_dmu_dir_file: no visible global function definition for 'arrange'
+write_dmu_dir_file: no visible binding for global variable
+  'variable_number'
+write_dmu_dir_file: no visible global function definition for
+  'read.table'
+write_dmu_dir_file: no visible binding for global variable 'FAQfile'
+write_dmu_dir_file: no visible global function definition for
+  'mutate_all'
+write_dmu_dir_file: no visible global function definition for '%$%'
+write_dmu_dir_file: no visible binding for global variable 'V1'
+write_dmu_dir_file: no visible global function definition for 'spread'
+write_dmu_dir_file: no visible binding for global variable '.'
+write_dmu_dir_file: no visible global function definition for 'tail'
+write_dmu_dir_file: no visible binding for global variable 'Comment'
+write_dmu_phenotypes : translate_missing_class: no visible global
+  function definition for '%>%'
+write_dmu_phenotypes : translate_missing_continuous: no visible global
+  function definition for '%>%'
+write_dmu_phenotypes : find_class_column_name_from_values: no visible
+  global function definition for '%>%'
+write_dmu_phenotypes : find_class_column_name_from_values: no visible
+  global function definition for 'select'
+write_dmu_phenotypes : find_class_column_name_from_values: no visible
+  global function definition for 'all_of'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for '%>%'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for '%T>%'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for 'distinct'
+write_dmu_phenotypes : translate_class_strings: no visible binding for
+  global variable 'variable'
+write_dmu_phenotypes : translate_class_strings: no visible binding for
+  global variable 'old_classifier'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for 'mutate'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for 'n'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for 'fwrite'
+write_dmu_phenotypes : translate_class_strings: no visible global
+  function definition for '%$%'
+write_dmu_phenotypes : translate_class_strings: no visible binding for
+  global variable 'new'
+write_dmu_phenotypes: no visible global function definition for '%>%'
+write_dmu_phenotypes: no visible global function definition for
+  'fwrite'
+write_dmu_phenotypes: no visible global function definition for
+  'select'
+write_dmu_phenotypes: no visible global function definition for
+  'all_of'
+write_dmu_phenotypes: no visible global function definition for
+  'mutate_at'
+write_dmu_phenotypes: no visible global function definition for
+  'gather'
+write_dmu_phenotypes: no visible global function definition for
+  'group_by'
+write_dmu_phenotypes: no visible binding for global variable 'variable'
+write_dmu_phenotypes: no visible binding for global variable 'input'
+write_dmu_phenotypes: no visible global function definition for
+  'summarize'
+write_dmu_phenotypes: no visible binding for global variable 'N'
+write_dmu_phenotypes: no visible global function definition for 'sd'
+Undefined global functions or variables:
+  %$% %>% %T>% . Comment FAQfile N V1 across add_row all_of animal
+  arrange chromosome class_code class_variable_number column
+  covariance_matrix distinct effect_number effect_type estimate
+  everything father father_not_in_animal file_replicate filetype filter
+  first_blank fread fwrite gather generation generation_placeholder
+  group_by head input insides_end insides_start is_linkage_map
+  is_qtl_file line locus mother mother_not_in_animal mutate mutate_all
+  mutate_at n new old_classifier pivot_wider polynomial.values position
+  read.table regressor_end regressor_start relocate rename_all
+  rename_at rnorm role runif sd select sex size spread start str_locate
+  str_locate_all str_split summarize tail type ungroup variable
+  variable_number x
+Consider adding
+  importFrom("methods", "new")
+  importFrom("stats", "filter", "line", "rnorm", "runif", "sd", "start")
+  importFrom("utils", "head", "read.table", "tail")
+to your NAMESPACE file (and ensure that your DESCRIPTION Imports field
+contains 'methods').
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'cor2cov' 'create_diagonal_matrix' 'create_empty_matrix'
+  'create_identity_matrix' 'create_square_matrix_from_vector'
+  'dmu_calculate_breeding_values_with_random_regression'
+  'get_legendre_polynomial' 'get_random_string_of_letters'
+  'interpolate_missing_values' 'load_QMsim_output'
+  'predict_with_covariance_matrix' 'print_hello_world' 'qmsim_simulate'
+  'sample_correlation_matrix' 'see_matrix'
+  'select_xth_element_from_list' 'sort_pedigree' 'str_locate_flex'
+  'str_locate_last' 'write_dmu_dir_file' 'write_dmu_phenotypes'
+All user-level objects in a package should have documentation entries.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... NOTE
+Auto-generated content requiring editing in Rd file 'genutil-package.Rd':
+  \references: 'This optional section can contain literature or other refere...'
+  \seealso: 'Optional links to other man pages'
+  \examples: '\dontrun{      ## Optional simple examples of the most impor...'
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... NOTE
+Found the following sources/headers with CR or CRLF line endings:
+  src/RcppExports.cpp
+Some Unix compilers require LF line endings.
+* checking compiled code ... OK
+* checking examples ... OK
+* checking PDF version of manual ... OK
+* DONE
+Status: 3 WARNINGs, 6 NOTEs

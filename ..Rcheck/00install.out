@@ -1,0 +1,17 @@
+* installing *source* package 'genutil' ...
+** using staged installation
+** libs
+using C++ compiler: 'G__~1.EXE (GCC) 13.2.0'
+g++ -std=gnu++17  -I"C:/PROGRA~1/R/R-44~1.1/include" -DNDEBUG  -I'C:/Users/au488376/AppData/Local/R/win-library/4.4/Rcpp/include'   -I"C:/rtools44/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17  -I"C:/PROGRA~1/R/R-44~1.1/include" -DNDEBUG  -I'C:/Users/au488376/AppData/Local/R/win-library/4.4/Rcpp/include'   -I"C:/rtools44/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+g++ -std=gnu++17 -shared -s -static-libgcc -o genutil.dll tmp.def RcppExports.o rcpp_hello_world.o -LC:/rtools44/x86_64-w64-mingw32.static.posix/lib/x64 -LC:/rtools44/x86_64-w64-mingw32.static.posix/lib -LC:/PROGRA~1/R/R-44~1.1/bin/x64 -lR
+installing to C:/Users/au488376/ONEDRI~1/DOCUME~1/Projects/genutil/RCHECK~1/00LOCK-genutil/00new/genutil/libs/x64
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (genutil)
