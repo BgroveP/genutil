@@ -117,7 +117,7 @@ The following object is masked from 'package:purrr':
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.9 0.06 2.37 NA NA 
+Time elapsed:  0.8 0.08 1.67 NA NA 
 > grDevices::dev.off()
 null device 
           1 

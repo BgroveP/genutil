@@ -11,9 +11,16 @@
 * this is package 'genutil' version '1.0'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
-* checking if this is a source package ... OK
+* checking if this is a source package ... WARNING
+Subdirectory 'genutil/src' contains apparent object files/libraries
+  RcppExports.o genutil.dll rcpp_hello_world.o
+Object files/libraries should not be included in a source package.
 * checking if there is a namespace ... OK
-* checking for executable files ... OK
+* checking for executable files ... WARNING
+Found the following executable file:
+  src/genutil.dll
+Source packages should not contain undeclared executable files.
+See section 'Package structure' in the 'Writing R Extensions' manual.
 * checking for hidden files and directories ... NOTE
 Found the following hidden files and directories:
   ..Rcheck
@@ -343,4 +350,4 @@ Some Unix compilers require LF line endings.
 * checking examples ... OK
 * checking PDF version of manual ... OK
 * DONE
-Status: 3 WARNINGs, 6 NOTEs
+Status: 5 WARNINGs, 6 NOTEs
