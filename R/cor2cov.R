@@ -9,3 +9,5 @@
 cor2cov <- function(correlation_matrix, variances) {
   create_diagonal_matrix(sqrt(variances)) %*% correlation_matrix %*% create_diagonal_matrix(sqrt(variances)) %>% return()
 }
+
+cov2cor()
