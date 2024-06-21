@@ -6,8 +6,6 @@
 #' @param variances Vector of diagonal elements of the resulting covariance matrix
 #' @return A covariance matrix
 #' @export
-cor2cov <- function(correlation_matrix, variances) {
+get_covariance_from_correlation <- function(correlation_matrix, variances) {
   create_diagonal_matrix(sqrt(variances)) %*% correlation_matrix %*% create_diagonal_matrix(sqrt(variances)) %>% return()
 }
-
-cov2cor()

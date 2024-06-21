@@ -4,12 +4,12 @@
 #'
 #' @param x Variable with missing data-points
 #' @param time A variable that denotes the spacing between npoints. If omitted, missing points will be assumed to be in the middle of observed values.
-#' @param extraploate Calculate values where only one adjacent value is known.
+#' @param extrapolate Calculate values where only one adjacent value is known.
 #' @return A vector of data with observed and interpolated values.
 #' @export
 #'
 
-interpolate_missing_values <- function(x, time = NA, extraploate = F) {
+interpolate_missing_values <- function(x, time = NA, extrapolate = F) {
   y <- x
   positions <- 1:length(x)
   first_not_missing <- min(which(!is.na(x)))
@@ -38,7 +38,7 @@ interpolate_missing_values <- function(x, time = NA, extraploate = F) {
       next_standpoint <- next_standpoint + 1
     }
   }
-  if (extraploate) {
+  if (extrapolate) {
     # Any missing in the ends?
     missing_start <- is.na(y[1])
     missing_emd <- is.na(y[max(positions)])

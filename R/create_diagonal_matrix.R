@@ -7,17 +7,15 @@
 #' @return A sparse diagonal matrix.
 #' @export
 
-create_diagonal_matrix <- function(diagonal, number_of_rows = NA) {
-  # If dimension was provided, we check that dimension match
-  if (!is.na(number_of_rows) & (length(diagonal) != number_of_rows & length(diagonal) != 1)) {
-    stop("Some dimensions are off.")
-  }
-
-  # If no dimension was provided, the dimension is read from the input for diagonal
-  if (is.na(number_of_rows)) number_of_rows <- length(diagonal)
+create_diagonal_matrix <- function(diagonal) {
+  # The dimension is read from the input for diagonal
+  number_of_rows <- length(diagonal)
 
   # Stop if data is not numerical
   if (any(!is.numeric(diagonal))) stop("The input vector is not numeric.")
+
+  # Stop if the vector was empty
+  if (!number_of_rows >= 1) stop("The input vector is empty.")
 
   # Create the output matrix
   temporary_matrix <- Matrix::Matrix(0, nrow = number_of_rows, ncol = number_of_rows)

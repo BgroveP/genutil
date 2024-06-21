@@ -9,7 +9,7 @@
 #' @return A matrix of the infile
 #' @export
 #'
-load_QMsim_output <- function(path, replicate = 1) {
+qmsim_get_output <- function(path, replicate = 1) {
     phenotype_data_path <- paste(path, "/temporary_phenotypes.csv", sep = "")
     genotype_data_path <- paste(path, "/temporary_genotypes.csv", sep = "")
 
@@ -58,7 +58,6 @@ load_QMsim_output <- function(path, replicate = 1) {
 
 
         if (grepl("_mrk_", data_files$full_path[file_number])) {
-
             # Read the marker matrix
             intermediate_marker_matrix <- fread(data_files$full_path[file_number], header = F) %>%
                 data.matrix()

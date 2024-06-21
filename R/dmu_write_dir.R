@@ -1,16 +1,16 @@
-write_dmu_dir_file <- function(information_path = NA,
-                               analysis_type,
-                               dense_analysis = F,
-                               phenotypes,
-                               fixed_effects = c(),
-                               random_effect_structure = c(),
-                               covariates = c(),
-                               comment = " ",
-                               covariance_structures = " ",
-                               additional_options = " ",
-                               social_interaction_model = 0,
-                               traits_without_residual_covariance = c(""),
-                               reduce_statement = c()) {
+dmu_write_dir <- function(information_path = NA,
+                          analysis_type,
+                          dense_analysis = F,
+                          phenotypes,
+                          fixed_effects = c(),
+                          random_effect_structure = c(),
+                          covariates = c(),
+                          comment = " ",
+                          covariance_structures = " ",
+                          additional_options = " ",
+                          social_interaction_model = 0,
+                          traits_without_residual_covariance = c(""),
+                          reduce_statement = c()) {
   library(dplyr)
   library(magrittr)
   library(tidyr)

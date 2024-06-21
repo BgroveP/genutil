@@ -7,7 +7,7 @@
 #' @return A vector of data.
 #' @export
 #'
-select_xth_element_from_list <- function(this_list, x) {
+get_xth_elements_from_list_of_vectors <- function(this_list, x) {
   length_of_list <- length(this_list)
   out <- c(rep(NA, length_of_list))
 
