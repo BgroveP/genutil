@@ -91,17 +91,17 @@ dmu_calculate_breeding_values_with_random_regression <- function(
 
   number_of_class_effects <- dir %$%
     strsplit(line[dir_model_class_lines], split = " ") %>%
-    select_xth_element_from_list(3) %>%
+    get_xth_elements_from_list_of_vectors(3) %>%
     as.numeric()
 
   number_of_random_effects <- dir %$%
     strsplit(line[dir_model_random_lines], split = " ") %>%
-    select_xth_element_from_list(1) %>%
+    get_xth_elements_from_list_of_vectors(1) %>%
     as.numeric()
 
   number_of_continuos_effects <- dir %$%
     strsplit(line[dir_model_continuous_lines], split = " ") %>%
-    select_xth_element_from_list(1) %>%
+    get_xth_elements_from_list_of_vectors(1) %>%
     as.numeric()
   # Interpret .DIR information
   ## Phenotype information
