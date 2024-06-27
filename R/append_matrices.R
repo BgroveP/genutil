@@ -9,7 +9,7 @@
 #'
 
 
-test <- function(...) {
+append_matrices <- function(...) {
     list_view <- list(...)
     list_view %<>% lapply(as.matrix)
 
