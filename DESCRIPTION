@@ -13,9 +13,9 @@ Maintainer: Bjarke Poulsen <bgp@qgg.au.dk>
 Description: The package has simple utility functions to assist prediction
     of breeding values.
 License: GPL (>= 2)
-Depends: tidyverse,
+Depends: data.table,
     magrittr,
-    data.table
+    tidyverse
 Imports: Rcpp (>= 1.0.12),
     dplyr,
     orthopolynom,

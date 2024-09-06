@@ -73,12 +73,13 @@ legendre_curve_or_slope <- function(
         # output the return object
         return_object <- return_object +
             temporary_input %>%
+            group_by(x) %>%
             mutate(
                 out = eval(
                     parse(text = str_replace_all(
                         this_equation,
                         "x",
-                        x_encapsulated
+                        x_encapsulated[1]
                     ))
                 )
             ) %$%
