@@ -17,12 +17,10 @@ Imports: Rcpp (>= 1.0.12),
     dplyr,
     magrittr,
     orthopolynom,
-    tidyverse
-Depends:
-    tidyverse,
-    magrittr,
     Matrix,
-    data.table
+    tidyverse,
+    data.table,
+    Deriv
 LinkingTo: Rcpp
 Suggests: 
     testthat (>= 3.0.0)
