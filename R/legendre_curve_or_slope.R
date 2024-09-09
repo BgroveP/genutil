@@ -17,6 +17,9 @@ legendre_curve_or_slope <- function(
     list_of_input <- list(...)
     length_of_input <- list_of_input %>%
         length()
+    lengths_of_inputs <- lapply(list_of_input, length) %>%
+        unique() %>%
+        unlist()
     covariate_vector_indice <- 1
     coefficient_vector_indices <- 2:length_of_input
     number_of_orders <- length_of_input - 2
@@ -29,9 +32,7 @@ legendre_curve_or_slope <- function(
         if (!is.vector(list_of_input[[i]])) stop(paste("Input", i, "is not a vector."))
         if (any(!is.numeric(list_of_input[[i]]))) stop(paste("Input", i, "is not numeric."))
     }
-    if (lapply(list_of_input, length) %>%
-        unique() %>%
-        length() > 1) {
+    if (!(length(lengths_of_inputs) == 1 | length(lengths_of_inputs) > 1 & min(lengths_of_inputs) == 1)) {
         stop("The input vectors are not the same size")
     }
 
@@ -73,15 +74,14 @@ legendre_curve_or_slope <- function(
         # output the return object
         return_object <- return_object +
             temporary_input %>%
-            group_by(x) %>%
             mutate(
-                out = eval(
-                    parse(text = str_replace_all(
-                        this_equation,
-                        "x",
-                        x_encapsulated[1]
-                    ))
+                out = str_replace_all(
+                    this_equation,
+                    "x",
+                    x_encapsulated
                 )
+                %>%
+                    evaluate_string()
             ) %$%
             out
     }
