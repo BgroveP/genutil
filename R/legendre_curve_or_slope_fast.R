@@ -85,31 +85,3 @@ legendre_curve_or_slope_fast <- function(
         return()
 }
 
-
-
-
-list_of_input <- data.frame(x = sample(0:314, 10000000, TRUE)) %>%
-    mutate(
-        x = (x - 314 / 2) / (314 / 2),
-        b0 = rnorm(n()),
-        b1 = rnorm(n()),
-        b2 = rnorm(n()),
-        b3 = rnorm(n()),
-        b4 = rnorm(n())
-    )
-
-time1 <- Sys.time()
-tmp <- list_of_input %>%
-    mutate(
-        method1 = legendre_curve_or_slope(x, b0, b1, b2, b3, b4)
-    )
-time2 <- Sys.time()
-tmp <- list_of_input %>%
-    mutate(
-        method1 = legendre_curve_or_slope_fast(x, b0, b1, b2, b3, b4)
-    )
-time3 <- Sys.time()
-
-
-time2 - time1
-time3 - time2
