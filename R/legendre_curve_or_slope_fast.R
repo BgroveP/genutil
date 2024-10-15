@@ -63,7 +63,7 @@ legendre_curve_or_slope_fast <- function(
         if (output == "slope" & this_order == 0) this_equation <- "0*x"
         if (output == "slope" & this_order > 0) {
             this_equation <- this_equation %>%
-                Deriv(cache.exp = F)
+                Deriv::Deriv(cache.exp = F)
         }
         if (debug) print(this_equation)
 
@@ -84,4 +84,3 @@ legendre_curve_or_slope_fast <- function(
     return_object %>%
         return()
 }
-

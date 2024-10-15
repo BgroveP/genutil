@@ -67,7 +67,7 @@ legendre_curve_or_slope <- function(
         if (output == "slope" & this_order == 0) this_equation <- "0*x"
         if (output == "slope" & this_order > 0) {
             this_equation <- this_equation %>%
-                Deriv(cache.exp = F)
+                Deriv::Deriv(cache.exp = F)
         }
         if (debug) print(this_equation)
 
