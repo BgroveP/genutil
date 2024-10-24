@@ -9,7 +9,7 @@
 #' @export
 #'
 
-sample_correlation_matrix <- function(size = 1, density_function = "uniform") {
+get_random_correlation_matrix <- function(size = 1) {
   if (abs(size %% 1) >= 0.0000001) stop("Size is not an integer")
 
   this_matrix <- matrix(1, size, size)
@@ -21,10 +21,7 @@ sample_correlation_matrix <- function(size = 1, density_function = "uniform") {
       while (!this_matrix_has_full_rank) {
         this_matrix[1:(this_size - 1), this_size] <-
           this_matrix[this_size, 1:(this_size - 1)] <-
-          ifelse(density_function == "uniform",
-            runif(this_size - 1, min = -1, max = 1),
-            tanh(rnorm(1, 0, 1))
-          )
+          runif(this_size - 1, min = -1, max = 1)
         if (det(this_matrix[1:this_size, 1:this_size]) > 0) this_matrix_has_full_rank <- T
       }
     }
